@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+
+}
+
+
+:root{
+    --white: #FFFFFF;
+    --dark-blue: #32325D;
+    --purple: #3A4F9A;
+    --brown: #575757;
+}
+
+
+header{
+    background-color: #32325D;
+    padding: 15px 79px 15px 79px;
+    box-shadow: 0 0 9px 0 black;
+}
+
+.logo{
+    color: var(--white);
+}
+
+h1 {
+    justify-content: left;
+    padding-left: 305px;
+    padding-top: 50px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    width: 409px;
+    height: 455px;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.5;
+    text-align: center;
+}
+.container .card img {
+    transition: 0.5;
+}
+
+.container h2{
+    color: #3A4F9A;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+.container .content{
+    color: #575757;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+}
+.container a{
+    right: 10px;
+    padding-top: 35px;
+    position: absolute;
+}
