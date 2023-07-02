@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --white: #FFFFFF;
+  --dark-blue: #32325D;
+  --purple: #3A4F9A;
+  --brown: #575757;
+}
+
+body {
+  color: var(--purple);
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-item {
+    width: 409px;
+    height: 455px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+.post-item h2 {
+  color: #3A4F9A;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding: 15px;
+}
+
+.post-item p {
+  color: var(--gray, #575757);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 1.3px;
+  overflow: hidden;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.headerr {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.h1-title {
+  color: var(--dark-blue);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  margin-left: 309px;
+}
+
+.header-title{
+    color: var(--white, #FFF);
+    font-size: 24px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#posts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.expand-link {
+    color: var(--dark-blue); /* Cor do link "Expand..." */
+    font-size: 14px;
+    text-decoration: underline; /* Adiciona sublinhado ao link "Expand..." */
+    margin-top: 10px; /* Espaçamento superior do link "Expand..." */
+  }
