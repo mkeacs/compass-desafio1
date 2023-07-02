@@ -23,11 +23,10 @@ function renderPosts() {
       postBody.textContent = post.body;
       postItem.appendChild(postBody);
 
-      const expandLink = document.createElement('a');
-      expandLink.textContent = 'Expand...';
-      expandLink.href = `post-details.html?id=${post.id}`;
-      postItem.appendChild(expandLink);
-      
+      const postLink = document.createElement('a');
+      postLink.textContent = 'Expand...';
+      postLink.href = `post-details.html?id=${post.id}`;
+      postItem.appendChild(postLink);
 
       // Adicione um evento de clique para redirecionar para a página de detalhes do post
       postItem.addEventListener('click', () => {
@@ -38,7 +37,6 @@ function renderPosts() {
     });
   }
 }
-
 // Função para renderizar os detalhes de um post e seus comentários
 function showPostDetails(postId: number) {
   const postDetails = document.getElementById('post-details');
@@ -47,13 +45,13 @@ function showPostDetails(postId: number) {
   if (postDetails && post) {
     postDetails.innerHTML = '';
 
-    const postTitle = document.createElement('h2');
-    postTitle.textContent = post.title;
-    postDetails.appendChild(postTitle);
-
     const postImage = document.createElement('img');
     postImage.src = post.imageUrl;
     postDetails.appendChild(postImage);
+
+    const postTitle = document.createElement('h2');
+    postTitle.textContent = post.title;
+    postDetails.appendChild(postTitle);
 
     const postBody = document.createElement('p');
     postBody.textContent = post.body;
