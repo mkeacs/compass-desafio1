@@ -37,6 +37,7 @@ function renderPosts() {
     });
   }
 }
+
 // Função para renderizar os detalhes de um post e seus comentários
 function showPostDetails(postId: number) {
   const postDetails = document.getElementById('post-details');
@@ -75,8 +76,7 @@ function showPostDetails(postId: number) {
     backButton.textContent = 'Voltar';
     backButton.href = '#';
     backButton.addEventListener('click', () => {
-      renderPosts();
-      postDetails.innerHTML = '';
+      window.location.href = './index.html';
     });
     postDetails.appendChild(backButton);
   }
@@ -84,5 +84,14 @@ function showPostDetails(postId: number) {
 
 // Inicialização da página
 document.addEventListener('DOMContentLoaded', () => {
-  renderPosts();
+  // Obter o id do post a partir da URL da página atual
+  const urlParams = new URLSearchParams(window.location.search);
+  const postId = urlParams.get('id');
+
+  // Se o id do post estiver presente, renderizar os detalhes do post
+  if (postId) {
+    showPostDetails(parseInt(postId, 10));
+  } else {
+    renderPosts();
+  }
 });
