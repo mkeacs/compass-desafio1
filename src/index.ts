@@ -93,6 +93,7 @@ function showPostDetails(postId: number) {
       const commentBody = document.createElement("span");
       commentBody.className = "comment-body";
       commentBody.textContent = comment.body;
+      commentBody.style.fontWeight = "200";
       commentItem.appendChild(commentBody);
 
       commentsList.appendChild(commentItem);
