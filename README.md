@@ -25,7 +25,6 @@ To run the project locally, follow the steps below:
 - Clone or download the project repository.
 - Open the index.html file in a web browser.
 
-O blog de posts será carregado no navegador, e você poderá interagir com os posts e ver os detalhes de cada um deles.
 
 The posts blog will load in the browser, and you can interact with the posts and view their details.
 
